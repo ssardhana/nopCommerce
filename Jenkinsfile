@@ -1,6 +1,6 @@
 pipeline {
     agent { label 'dotnet_7_node' }
-    triggers{ pollSCM(* * * * *) }
+    triggers{ pollSCM('* * * * *') }
     /* insert Declarative Pipeline here */
     stages {
         stage('git repo') {
